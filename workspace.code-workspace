@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [{
+			"name": "Cake: Debug Script (.NET Tool)",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "dotnet-cake",
+			"windows": {
+				"program": "dotnet-cake.exe"
+			},
+			"args": [
+				"${workspaceRoot}/build.cake",
+				"--debug",
+				"--verbosity=diagnostic"
+			],
+			"cwd": "${workspaceRoot}",
+			"stopAtEntry": false,
+			"externalConsole": false,
+			"justMyCode": false
+		}
+			
+
+		]
+	}
+}
